@@ -22,6 +22,7 @@ RUN mkdir -p /vol/web/staticfiles
 RUN adduser -D user
 RUN chown -R user:user /vol
 RUN chmod -R 755 /vol/web
+RUN chmod -R 755 /django-portfolio/staticfiles
 USER user
 
 CMD ["entrypoint.sh"]
