@@ -8,7 +8,7 @@ RUN pip install -r /requirements.txt
 RUN apk del .tmp
 
 RUN mkdir /django-portfolio
-COPY ./django-portfolio /django-portfolio
+COPY ./personal_portfolio /django-portfolio
 WORKDIR /django-portfolio
 COPY ./scripts /scripts
 
